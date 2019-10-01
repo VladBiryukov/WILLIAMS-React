@@ -1,0 +1,70 @@
+// @import url('../img');
+.header {
+  &__block { 
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__box-logo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+  }
+  &__img-log {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    transition: 0.3s; 
+    background: url('../img/Logo.svg') ; 
+  }
+  &__img-log:hover {
+    opacity: 0.7;
+  }
+  &__btn-link {
+    font-family: "Signika";
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    color: #0e1420;
+    white-space: nowrap;
+    color: #ffe195;
+    transition: 0.3s;
+  }
+  &__box-btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -65px;
+    @media (max-width: 1230px){
+      margin: 0;
+    }
+  }
+  &__box-contacts {
+    display: flex;
+    @media (max-width: 1230px) {
+      flex-direction: column;
+      margin-bottom: -85px;
+    }
+     @media (max-width: 1068px) {
+      flex-direction: column;
+      margin-bottom: -65px;
+    }
+    
+  }
+  &__phone {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    white-space: nowrap;
+    color: #ffe195;
+    font-weight: 600;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    @media (max-width: 1230px){
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.header__block {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__box-logo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+
+.header__img-log {
+  width: 80px;
+  height: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../img/Logo.svg");
+}
+
+.header__img-log:hover {
+  opacity: 0.7;
+}
+
+.header__btn-link {
+  font-family: "Signika";
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  color: #0e1420;
+  white-space: nowrap;
+  color: #ffe195;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__box-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: -65px;
+}
+
+@media (max-width: 1230px) {
+  .header__box-btn {
+    margin: 0;
+  }
+}
+
+.header__box-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1230px) {
+  .header__box-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: -85px;
+  }
+}
+
+@media (max-width: 1068px) {
+  .header__box-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: -65px;
+  }
+}
+
+.header__phone {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+  color: #ffe195;
+  font-weight: 600;
+  margin: 0 15px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1230px) {
+  .header__phone {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

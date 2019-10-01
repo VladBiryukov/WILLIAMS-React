@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Signika:300,400&display=swap");
+
+.services {
+  &__block {
+    color: white;
+  }
+  &__box-logo {
+    width: 80px;
+    height: 80px;
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+  &__box-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    background: rgba(27, 49, 75, 0.75);
+    padding: 50px 0 20px;
+    transition: 0.3s;
+    @media (max-width: 1180px) {
+      padding: 30px 0 0;
+    }
+
+    @media (min-width: 1023px) {
+      &:nth-child(3n + 1) {
+        grid-column: 1/5;
+      }
+      &:nth-child(3n + 2) {
+        grid-column: 5/9;
+      }
+      &:nth-child(3n + 3) {
+        grid-column: 9/13;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      &:nth-child(2n + 1) {
+        grid-column: 1/7;
+      }
+      &:nth-child(2n + 2) {
+        grid-column: 7/13;
+      }
+    }
+  }
+
+  &__content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    @media (max-width: 1180px) {
+      padding: 0 30px;
+    }
+  }
+  &__name {
+    padding: 25px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0; 
+    font-family: "Signika";
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+    letter-spacing: 1px;
+    @media (max-width: 1180px) {
+      padding: 15px 0;
+    }
+  }
+  &__text {
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    // mixin
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    font-family: "Signika";
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+
+    //
+    @media (max-width: 1180px) {
+      padding-bottom: 15px;
+    }
+  }
+  &__btn {
+    text-align: center;
+    background: #2d3a52;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    width: 100%;
+    padding: 17px 0;
+  }
+}

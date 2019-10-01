@@ -1,5 +1,5 @@
 import React from 'react'
-import '../index.css'
+import './Navigation.css'
 
 
 class Navigation extends React.Component {
@@ -11,7 +11,7 @@ class Navigation extends React.Component {
          { href: "#", text: "FAQ" },
          { href: "#", text: "Fee Structure" },
          { href: "#", text: "Contact" },
-         { href: "#", text: "Blog" },
+         { href: "#", text: "Blog" }, 
       ]
    }
    renderNav() {
