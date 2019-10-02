@@ -15,7 +15,7 @@ function CardServices(props) {
          <div className="services__content-card">
             <div className='services__box-img'> <img src={props.card.img} className='services__img' alt={props.card.name} /> </div>
             <div className='services__name'> {props.card.name}</div>
-            <div className='services__text'>{props.card.text}</div>
+            <div className='item'>{props.card.text}</div>
          </div>
          <div className='services__btn'>{props.card.btn}</div>
          {/* <h6 className="services__name services__name_mobile">{props.card.name}</h6> */}

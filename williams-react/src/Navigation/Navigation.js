@@ -1,6 +1,7 @@
 import React from 'react'
-import './Navigation.css'
-
+// import styles from './Navigation.css'
+// import './Navigation.css';
+import style from './Navigation.module.css';
 
 class Navigation extends React.Component {
    state = {
@@ -11,13 +12,19 @@ class Navigation extends React.Component {
          { href: "#", text: "FAQ" },
          { href: "#", text: "Fee Structure" },
          { href: "#", text: "Contact" },
-         { href: "#", text: "Blog" }, 
+         { href: "#", text: "Blog" },
       ]
    }
    renderNav() {
       return this.state.nav.map(nav => {
          return (
-            <a className="nav__link" href={nav.href} key={nav.text}>{nav.text}</a>
+            <a
+
+               className={style.item}
+               href={nav.href}
+               key={nav.text}>
+               {nav.text}
+            </a>
          )
       })
    }

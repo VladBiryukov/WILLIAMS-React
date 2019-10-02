@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../Navigation/Navigation.js'
 import './Header.css'
 
 function Logo() {
@@ -29,7 +29,7 @@ class Header extends React.Component {
 
       return this.state.btn.map(btn => {
          return (
-            <div className='header__wrap-btn' key={btn.text}> <a className="header__btn-link" href={btn.href}>{btn.text}</a></div>
+            <div className='header__wrap-btn' key={btn.text}> <a className="item" href={btn.href}>{btn.text}</a></div>
          )
       })
    }

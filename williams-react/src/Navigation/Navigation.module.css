@@ -14,9 +14,11 @@
   color: #0e1420;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.8);
-  transition: .3s;
+  transition: 0.3s;
 }
-.nav__link:hover{
+.nav__link:hover {
   color: #ffe195;
-
+}
+.item {
+  color: red;
 }
