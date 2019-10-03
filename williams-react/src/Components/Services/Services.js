@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Services.module.css';
-import ruler from '../img/ruler.svg'
-import medal from '../img/medal.svg'
-import notebook from '../img/notebook.svg'
-import planet from '../img/planet.svg'
-import home from '../img/home.svg'
-import plant from '../img/plant.svg'
+import ruler from '../../img/ruler.svg'
+import medal from '../../img/medal.svg'
+import notebook from '../../img/notebook.svg'
+import planet from '../../img/planet.svg'
+import home from '../../img/home.svg'
+import plant from '../../img/plant.svg'
 
 
 

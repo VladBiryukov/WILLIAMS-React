@@ -22,7 +22,7 @@
           box-sizing: border-box;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: url("../img/Logo.svg");
+  background: url("../../img/Logo.svg");
 }
 
 .header__img_log:hover {
