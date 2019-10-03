@@ -5,15 +5,15 @@
   &__block {
     color: white;
   }
-  &__box-logo {
+  &__box_logo {
     width: 80px;
     height: 80px;
   }
   &__img {
     width: 80px;
-    height: 80px;
+    height: 80px; 
   }
-  &__box-card {
+  &__box_card {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
@@ -52,7 +52,7 @@
     }
   }
 
-  &__content-card {
+  &__content_card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.css';
+import styles from './Services.module.css';
 import ruler from '../img/ruler.svg'
 import medal from '../img/medal.svg'
 import notebook from '../img/notebook.svg'
@@ -11,13 +11,13 @@ import plant from '../img/plant.svg'
 
 function CardServices(props) {
    return (
-      <a className="services__card" href='/'>
-         <div className="services__content-card">
-            <div className='services__box-img'> <img src={props.card.img} className='services__img' alt={props.card.name} /> </div>
-            <div className='services__name'> {props.card.name}</div>
-            <div className='item'>{props.card.text}</div>
+      <a className={styles.services__card} href='/'>
+         <div className={styles.services__content_card}>
+            <div className={styles.services__box_img}> <img src={props.card.img} className={styles.services__img} alt={props.card.name} /> </div>
+            <div className={styles.services__name}> {props.card.name}</div>
+            <div className={styles.services__text} >{props.card.text}</div>
          </div>
-         <div className='services__btn'>{props.card.btn}</div>
+         <div className={styles.services__btn}>{props.card.btn}</div>
          {/* <h6 className="services__name services__name_mobile">{props.card.name}</h6> */}
       </a>
    )
@@ -52,14 +52,14 @@ class Services extends React.Component {
    }
    renderBoxCards() {
       return (
-         <div className='services__box-card'>
+         <div className={styles.services__box_card}>
             {this.renderCards()}
          </div>
       )
    }
    render() {
       return (
-         <div className='services'>
+         <section className='services'>
             <div className='container'>
                <div className='services__block'>
                   <TitleServices />
@@ -67,7 +67,7 @@ class Services extends React.Component {
 
                </div>
             </div>
-         </div >
+         </section >
       )
    }
 

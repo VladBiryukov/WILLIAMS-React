@@ -1,11 +1,11 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation.js'
-import './Header.css'
+import styles from './Header.module.css'
 
 function Logo() {
    return (
-      <a className="header__box-logo" href="index.html">
-         <div className="header__img-log" />
+      <a className={styles.header__box_logo} href="index.html">
+         <div className={styles.header__img_log} />
       </a>
    )
 }
@@ -29,7 +29,7 @@ class Header extends React.Component {
 
       return this.state.btn.map(btn => {
          return (
-            <div className='header__wrap-btn' key={btn.text}> <a className="item" href={btn.href}>{btn.text}</a></div>
+            <div className={styles.header__wrap_btn} key={btn.text}> <a className='nav__link' href={btn.href}>{btn.text}</a></div>
          )
       })
    }
@@ -39,11 +39,11 @@ class Header extends React.Component {
 
 
       return (
-         <div className="header__box-contacts"  >
-            <div className="header__box-phone">
-               <a className="header__phone" href={this.state.phone.href} >{this.state.phone.text}</a>
+         <div className={styles.header__box_contacts} >
+            <div className={styles.header__box_phone}>
+               <a className={styles.header__phone} href={this.state.phone.href} >{this.state.phone.text}</a>
             </div>
-            <div className="header__box-btn">
+            <div className={styles.header__box_btn}>
                {this.renderContactBtn()}
             </div>
          </div>
@@ -52,9 +52,9 @@ class Header extends React.Component {
 
    render() {
       return (
-         <header className="header">
-            <div className="container">
-               <div className="header__block">
+         <header className='header'>
+            <div className='container'>
+               <div className={styles.header__block}>
                   <Logo />
                   <Navigation />
                   {this.renderContacts()}

@@ -1,7 +1,5 @@
 import React from 'react'
-// import styles from './Navigation.css'
-// import './Navigation.css';
-import style from './Navigation.module.css';
+import './Navigation.css';
 
 class Navigation extends React.Component {
    state = {
@@ -20,7 +18,7 @@ class Navigation extends React.Component {
          return (
             <a
 
-               className={style.item}
+               className='nav__link'
                href={nav.href}
                key={nav.text}>
                {nav.text}
