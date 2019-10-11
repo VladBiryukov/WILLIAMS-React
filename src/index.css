@@ -16,3 +16,15 @@ code {
   max-width: 1220px;
   padding: 0 20px;
 }
+.title_h2 {
+  font-size: 32px;
+  line-height: 43px;
+  margin: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Playfair Display";
+}
+.header .nav__link {
+  margin-right: 18px;
+}

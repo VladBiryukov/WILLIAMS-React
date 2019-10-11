@@ -25,7 +25,7 @@ function CardServices(props) {
 
 function TitleServices() {
    return (
-      <h2 className='services__title'>We Can Help With</h2>
+      <h2 className={styles.services__title + ' title_h2'}>We Can Help With</h2>
    )
 }
 

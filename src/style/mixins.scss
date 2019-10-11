@@ -1,0 +1,72 @@
+@import "./common.scss";
+
+@mixin text-style($font-size, $line-height) {
+  font-size: $font-size + (px);
+  line-height: $line-height + (px);
+}
+@mixin cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 20px;
+}
+
+@mixin h1 {
+  @include text-style(56, 52);
+  margin: 0px;
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: $PlayfairDisplay;
+}
+@mixin h2 {
+  @include text-style(32, 43);
+  margin: 0px;
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: $PlayfairDisplay;
+  @media (max-width: $tablet) {
+    @include text-style(26, 35);
+  }
+}
+@mixin text_s {
+  @include text-style(16, 26);
+  margin: 0px;
+  font-family: $Signika;
+  font-style: normal;
+  font-weight: normal;
+  color: $white_pale;
+}
+
+@mixin btn_wide {
+  font-family: Signika;
+  display: block;
+  font-style: normal;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  background: #2d3a52;
+  font-weight: 400;
+  width: 100%;
+  padding: 17px 0;
+  transition: 0.3s;
+  &:hover {
+    text-decoration: none;
+    background: #ffe195;
+    color: #000;
+  }
+}

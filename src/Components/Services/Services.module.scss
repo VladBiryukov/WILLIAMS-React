@@ -1,17 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Signika:300,400&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Signika:300,400&display=swap");
+@import "./../../style/common.scss";
 
 .services {
   &__block {
     color: white;
   }
+  &__title {
+    margin: 0 0 10px;
+  }
   &__box_logo {
     width: 80px;
-    height: 80px;
+    height: 80px;  
   }
   &__img {
     width: 80px;
-    height: 80px; 
+    height: 80px;
   }
   &__box_card {
     display: grid;
@@ -67,10 +71,10 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    margin: 0; 
+    margin: 0;
     font-family: "Signika";
     text-transform: uppercase;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
     @media (max-width: 1180px) {
       padding: 15px 0;
@@ -105,4 +109,4 @@
     width: 100%;
     padding: 17px 0;
   }
-} 
+}

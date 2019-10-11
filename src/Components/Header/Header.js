@@ -25,19 +25,15 @@ class Header extends React.Component {
    }
 
    renderContactBtn() {
-
-
       return this.state.btn.map(btn => {
          return (
-            <div className={styles.header__wrap_btn} key={btn.text}> <a className='nav__link' href={btn.href}>{btn.text}</a></div>
+            <div className={styles.header__wrap_btn} key={btn.text}> <a className={styles.header__btn} href={btn.href}>{btn.text}</a></div>
          )
       })
    }
 
 
    renderContacts() {
-
-
       return (
          <div className={styles.header__box_contacts} >
             <div className={styles.header__box_phone}>
