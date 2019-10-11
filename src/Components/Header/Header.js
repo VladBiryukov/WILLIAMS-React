@@ -1,12 +1,13 @@
 import React from 'react';
-import Navigation from '../../Components/Navigation/Navigation.js'
-import styles from './Header.module.css'
+import Navigation from '../../Components/Navigation/Navigation.js';
+import styles from './Header.module.css';
+import { NavLink } from 'react-router-dom';
 
 function Logo() {
    return (
-      <a className={styles.header__box_logo} href="index.html">
+      <NavLink className={styles.header__box_logo} to="/Index">
          <div className={styles.header__img_log} />
-      </a>
+      </NavLink>
    )
 }
 
