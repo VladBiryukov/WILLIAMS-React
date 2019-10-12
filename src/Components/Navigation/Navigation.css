@@ -17,4 +17,5 @@
 }
 .nav__link:hover {
   color: #ffe195;
+  text-decoration: none;
 } 

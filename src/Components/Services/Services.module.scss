@@ -11,7 +11,7 @@
   }
   &__box_logo {
     width: 80px;
-    height: 80px;  
+    height: 80px;
   }
   &__img {
     width: 80px;
@@ -30,6 +30,7 @@
     background: rgba(27, 49, 75, 0.75);
     padding: 50px 0 20px;
     transition: 0.3s;
+    opacity: 0.8;
     @media (max-width: 1180px) {
       padding: 30px 0 0;
     }
@@ -53,6 +54,15 @@
       &:nth-child(2n + 2) {
         grid-column: 7/13;
       }
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+    &:hover .services__btn {
+      background: $gold;
+      color: $black;
+
     }
   }
 
@@ -108,5 +118,6 @@
     font-weight: 400;
     width: 100%;
     padding: 17px 0;
+    transition: 0.3s;
   }
 }

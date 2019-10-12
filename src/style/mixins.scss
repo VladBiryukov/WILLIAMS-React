@@ -70,3 +70,23 @@
     color: #000;
   }
 }
+
+@mixin btn-arrow {
+  font-size: 14px;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  background: #ffe195;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  line-height: 17px;
+  padding: 6px 18px 6px 36px;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+ 
+}

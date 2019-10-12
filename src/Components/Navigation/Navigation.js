@@ -13,15 +13,14 @@ class Navigation extends React.Component {
          { href: "#", text: "Blog" },
       ]
    }
-   
+
    renderNav() {
-      return this.state.nav.map(nav => {
+      return this.state.nav.map((nav, index) => {
          return (
             <NavLink
-               to={nav.href} 
-               className='nav__link'
-               // href={nav.href}
-               key={nav.text}>
+               to={nav.href}
+               className='nav__link' 
+               key={index}>
                {nav.text}
             </NavLink>
          )

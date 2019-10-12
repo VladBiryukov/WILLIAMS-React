@@ -40,6 +40,7 @@
   padding: 50px 0 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  opacity: 0.8;
 }
 
 @media (max-width: 1180px) {
@@ -77,6 +78,16 @@
     -ms-grid-column-span: 6;
     grid-column: 7/13;
   }
+}
+
+.services__card:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.services__card:hover .services__btn {
+  background: #ffe195;
+  color: #000000;
 }
 
 .services__content_card {
@@ -149,5 +160,7 @@
   font-weight: 400;
   width: 100%;
   padding: 17px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=Services.module.css.map */

@@ -70,7 +70,7 @@
   white-space: nowrap;
   color: #ffe195;
   font-weight: 600;
-  margin: 0 15px;
+  margin: 0 15px 0 0;
   letter-spacing: 1px;
 }
 
@@ -78,5 +78,9 @@
   .header__phone {
     margin: 0;
   }
+}
+
+.header__phone:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=Header.module.css.map */

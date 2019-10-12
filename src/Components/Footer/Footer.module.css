@@ -2,27 +2,6 @@
   padding: 50px 0;
 }
 
-.footer__block .nav__link {
-  margin-right: 24px;
-  padding: 5px;
-}
-
-@media (max-width: 768px) {
-  .footer__block .nav__link {
-    display: inline-block;
-    white-space: nowrap;
-    text-align: left;
-    width: 27%;
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 520px) {
-  .footer__block .nav__link {
-    width: 50%;
-  }
-}
-
 .footer__container {
   margin: 0 auto;
   max-width: 1220px;
@@ -36,6 +15,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 10px;
 }
 
@@ -49,11 +31,37 @@
 }
 
 .footer__button {
-  color: #000000;
+  font-size: 14px;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  color: #000;
   background: #ffe195;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 1px;
+  line-height: 17px;
+  padding: 6px 18px 6px 36px;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer__button::before {
+  color: #000000;
+  background: url("./../../img/Sprait.png") -1px -173px/645px 297px no-repeat;
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 9px;
+  width: 15px;
+  height: 10px;
 }
 
 @media (max-width: 768px) {
@@ -63,6 +71,7 @@
 }
 
 .footer__button:hover {
+  text-decoration: none;
   color: #000000;
   background: #cfb87e;
 }
@@ -74,27 +83,7 @@
 }
 
 .footer__logo {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.footer__logo:hover {
-  opacity: 0.7;
-}
-
-.footer__logo-BBB {
-  width: 170px;
-  height: 41px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.footer__logo-NAPP {
-  margin-left: 30px;
-  width: 80px;
-  height: 43px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-right: 10px;
 }
 
 .footer__social_link {
@@ -139,6 +128,7 @@
 }
 
 .footer__text_contacts {
+  margin: 0;
   color: rgba(255, 255, 255, 0.5);
 }
 

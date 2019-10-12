@@ -28,3 +28,11 @@ code {
 .header .nav__link {
   margin-right: 18px;
 } 
+@media (max-width:768px){
+  .header .nav{
+    display: none;
+  }
+}
+.footer .nav__link {
+  margin-right: 18px;
+} 

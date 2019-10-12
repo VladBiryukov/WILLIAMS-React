@@ -1,9 +1,9 @@
-.header {  
+@import "./../../style/main.scss";
+.header {
   &__block {
     padding: 50px 0;
     display: flex;
     align-items: center;
-   
   }
   &__box_logo {
     border-radius: 50%;
@@ -17,9 +17,9 @@
     box-sizing: border-box;
     transition: 0.3s;
     background: url("../../img/Logo.svg");
-  }
-  &__img_log:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   &__btn {
     font-family: "Signika";
@@ -31,26 +31,30 @@
     white-space: nowrap;
     color: #ffe195;
     transition: 0.3s;
+    &:hover {
+      color: $gold;
+      text-decoration: none;
+    }
   }
   &__box_btn {
     display: flex;
     flex-direction: column;
-    // margin-bottom: -65px;
-    @media (max-width: 1230px) {
-      // margin: 0;
+    @media (max-width: $tablet) {
+      display: none;
     }
   }
   &__box_contacts {
     display: flex;
-    margin-bottom: -67px;
-    @media (max-width: 1230px) {
+    margin-bottom: -75px;
+    @media (max-width: 1240px) {
       flex-direction: column;
-      margin-bottom: -86px;
+      margin-bottom: -100px;
     }
-    @media (max-width: 1086px) {
-      margin-bottom: -70px;
+    @media (max-width: 1093px) {
+      margin-bottom: -80px;
     }
-    @media (max-width: 981px) {
+    @media (max-width: $tablet) {
+      margin: 0;
     }
   }
   &__phone {
@@ -62,10 +66,14 @@
     white-space: nowrap;
     color: #ffe195;
     font-weight: 600;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
     letter-spacing: 1px;
     @media (max-width: 1230px) {
       margin: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $gold;
     }
   }
 }

@@ -40,9 +40,9 @@ export default class Footer extends React.Component {
       return (
          <div className={styles.footer__row}>
             <div className={styles.footer__box_logos}>
-               <img src={this.state.logo.bbs} alt='Logo BBS' />
-               <img src={this.state.logo.bbsDesc} alt='desc BBS' />
-               <img src={this.state.logo.napp} alt='Logo napp' />
+               <img className={styles.footer__logo} src={this.state.logo.bbs} alt='Logo BBS' />
+               <img className={styles.footer__logo} src={this.state.logo.bbsDesc} alt='desc BBS' />
+               <img className={styles.footer__logo} src={this.state.logo.napp} alt='Logo napp' />
             </div>
             <SocialNetworks />
          </div>
@@ -74,7 +74,7 @@ export default class Footer extends React.Component {
 
    render() {
       return (
-         <footer className={styles.footer}>
+         <footer className='footer'>
             <div className={styles.footer__container}>
                <div className={styles.footer__block}>
                   {this.renderRowNav()}

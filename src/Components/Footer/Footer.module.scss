@@ -1,21 +1,7 @@
 @import "./../../style/main.scss";
-.footer { 
+.footer {
   &__block {
     padding: 50px 0;
-    .nav__link {
-      margin-right: 24px;
-      padding: 5px;
-      @media (max-width: $tablet) {
-        display: inline-block;
-        white-space: nowrap;
-        text-align: left;
-        width: 27%;
-        margin-right: 0px;
-      }
-      @media (max-width: 520px) {
-        width: 50%;
-      }
-    }
   }
   &__container {
     @include container();
@@ -23,47 +9,39 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 10px;
     @media (max-width: $tablet) {
       flex-direction: column;
     }
   }
- 
-  
+
   &__button {
-    color: $black;
-    background: $gold;
-    transition: $transition;
-    letter-spacing: 1px;
+    @include btn-arrow();
+    &::before {
+      color: $black; 
+      background: url("./../../img/Sprait.png") -1px -173px/645px 297px no-repeat;
+      position: absolute;
+      content: "";
+      left: 12px;
+      top: 9px;
+      width: 15px;
+      height: 10px;
+    }
     @media (max-width: $tablet) {
       margin-top: 20;
     }
-    &:hover {
-      color: $black;
-      background: $gold_muddy;
+    &:hover{
+        text-decoration: none;
+        color: $black;
+        background: $gold_muddy;
     }
   }
   &__box_logo {
     display: flex;
   }
   &__logo {
-    transition: $transition;
-    &:hover {
-      opacity: 0.7;
-    }
-    &-BBB {
-      width: 170px;
-      height: 41px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    &-NAPP {
-      margin-left: 30px;
-      width: 80px;
-      height: 43px;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+    margin-right: 10px;
   }
 
   &__social_link {
@@ -73,7 +51,6 @@
     display: flex;
     margin-left: 10px;
   }
-  // звёзды рейтинга
   &__star {
     cursor: pointer;
     height: 17px;
@@ -97,6 +74,7 @@
       }
     }
     &_contacts {
+      margin: 0;
       color: $white_muddy;
       @media (max-width: $tablet) {
         padding-top: 20px;
