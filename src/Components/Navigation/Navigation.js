@@ -13,6 +13,7 @@ class Navigation extends React.Component {
          { href: "#", text: "Blog" },
       ]
    }
+   
    renderNav() {
       return this.state.nav.map(nav => {
          return (

@@ -1,0 +1,165 @@
+.footer__block {
+  padding: 50px 0;
+}
+
+.footer__block .nav__link {
+  margin-right: 24px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer__block .nav__link {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    width: 27%;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer__block .nav__link {
+    width: 50%;
+  }
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 20px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__button {
+  color: #000000;
+  background: #ffe195;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer__button {
+    margin-top: 20;
+  }
+}
+
+.footer__button:hover {
+  color: #000000;
+  background: #cfb87e;
+}
+
+.footer__box_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__logo:hover {
+  opacity: 0.7;
+}
+
+.footer__logo-BBB {
+  width: 170px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__logo-NAPP {
+  margin-left: 30px;
+  width: 80px;
+  height: 43px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__social_link {
+  margin-left: 11px;
+}
+
+.footer__box_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.footer__star {
+  cursor: pointer;
+  height: 17px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 300;
+  font-family: "Signika";
+  margin: 0px;
+  letter-spacing: 0.3px;
+}
+
+.footer__text_rating {
+  color: #ffffff;
+}
+
+.footer__text_address {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer__text_address {
+    line-height: 20px;
+  }
+}
+
+.footer__text_contacts {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer__text_contacts {
+    padding-top: 20px;
+  }
+}
+
+.footer__phone {
+  font-size: 14px;
+  line-height: 10px;
+  font-family: "Signika";
+  color: #ffe195;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.3px;
+}
+
+.footer__phone:hover {
+  color: #cfb87e;
+}
+/*# sourceMappingURL=Footer.module.css.map */

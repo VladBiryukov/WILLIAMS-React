@@ -1,8 +1,9 @@
-.header { 
+.header {  
   &__block {
     padding: 50px 0;
     display: flex;
     align-items: center;
+   
   }
   &__box_logo {
     border-radius: 50%;
@@ -31,14 +32,25 @@
     color: #ffe195;
     transition: 0.3s;
   }
-
+  &__box_btn {
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: -65px;
+    @media (max-width: 1230px) {
+      // margin: 0;
+    }
+  }
   &__box_contacts {
     display: flex;
-
-    @media (max-width: 1220px) {
+    margin-bottom: -67px;
+    @media (max-width: 1230px) {
       flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: -18px;
+      margin-bottom: -86px;
+    }
+    @media (max-width: 1086px) {
+      margin-bottom: -70px;
+    }
+    @media (max-width: 981px) {
     }
   }
   &__phone {
@@ -52,7 +64,7 @@
     font-weight: 600;
     margin: 0 15px;
     letter-spacing: 1px;
-    @media (max-width: 1220px) {
+    @media (max-width: 1230px) {
       margin: 0;
     }
   }
